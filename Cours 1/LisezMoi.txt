@@ -1,0 +1,98 @@
+python -m pip install pipenv pipenv-pipes
+-------------------------------------------------------
+pipenv --help
+----------------------------------------
+pipenv --venv
+-----------------------------
+pipenv  shell
+
+---------------------------------
+------------------------------------------------
+ copier les python files 
+
+c:\\users\\utilisateur\\appdata\\local\\programs\\python\\python37
+dans 
+
+C:\Users\Utilisateur\AppData\Local\Programs\Python\Python37\Lib\venv\scripts\nt
+
+---------------------------------------------
+
+envirommenent crée
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\Utilisateur\.virtualenvs\project01-l6Dv-lBA
+/////////////////////////////////////////////
+
+installer des packages
+--------------------------------
+pipenv install pandas flask
+-------------------------------
+pipenv --venv
+---------------------------
+pipenv --list
+------------------------
+tree
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+pipenv   lock -r   > requirements.txt
+
+cat requirements.txt
+
+pipenv run python
+
+
+
+pipenv   run  pip  freeze  > requirements.txt
+
+pipenv    check
+
+
+pipenv   install pytest --dev
+
+pipenv   uninstall pytest --dev
+
+pipenv   --rm
+
+
+pipenv --venv
+
+pipenv   install  -r   requirements.txt
+
+
+
+////////////////////////  DataBase////////////////////////////
+
+
+pip install Flask-SQLAlchemy
+
+
+-----------------------------------------
+creer un dossier static et database
+----------------------------------
+puis
+----------------------
+lancer python
+-----------------
+et taper
+--------------------------
+from app import db
+-------------------------
+et 
+-----------------------------
+db.create_all()
+-------------------------
+exit()
+
+------------------------
+apres
+------------------------------
+sqlite3 users.db
+---------------------------
+apres
+-------------------------------
+.tables
+------------------------------
+
+SELECT * FROM user;
+
+/////////////////////////////
