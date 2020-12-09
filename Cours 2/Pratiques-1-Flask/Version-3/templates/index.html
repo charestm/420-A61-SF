@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application de prédiction de l'hépatite</title>
+	 <!-- Font Awesome -->
+
+</head>
+<body>
+
+<div> <H2> Prédiction de la mortalité par hépatite </H2>
+  <p>à l'aide de l'apprentissage automatique </p>
+  </div>
+  
+<div class="container" >
+<form method="POST" action="/predict">
+		
+
+		          	 <!-- radioButton -->
+
+		          	<!-- Select option -->
+                    <!-- Input (number) -->
+
+
+
+		          	 <!-- Feature Starts here- Age -->
+                    <div class="form-group">
+		          	  <label for="age">Age:</label>
+		          	  <input type="number" class="form-control form-control-sm" id="age" name="age" min=7 max=150 value="7">
+		          	</div>
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>Genre</h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="sex" value="1" checked="checked">Male
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="sex" value="2">Female
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>Prenez-vous des stéroïdes?</h6
+		          	 		>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="steroid" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="steroid" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>Prenez-vous des antiviraux?</h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="antivirals" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="antivirals" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>Avez-vous de la fatigue?</h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="fatigue" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="fatigue" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-check-inline">
+		          	 	<label class="form-check-label">
+		          	 	<h6>Présence de l'araignée Naevi</h6>
+		          	 </label>
+		          	 </div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="spiders" value="1" checked="checked">No
+		          	  </label>
+		          	</div>
+		          	<div class="form-check-inline">
+		          	  <label class="form-check-label">
+		          	    <input type="radio" class="form-check-input" name="spiders" value="2">Yes
+		          	  </label>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+		          	<!-- Feature Starts here -->
+		          	<div>
+		          	 <div class="form-group">
+		          	  <label for="varices">Présence de varices:</label>
+		          	  <select class="form-control" id="varices" name='varices'>
+		          	    <option value="1">No</option>
+		          	    <option value="2">Yes</option>
+		          	  </select>
+		          	</div>
+		          	</div>
+		          	<!-- Feature Ends here -->
+					<!-- Feature Starts here -->
+					<div>
+					 <div class="form-group">
+					  <label for="varices">Présence d'ascite:</label>
+					  <select class="form-control" id="ascites" name='ascites'>
+					    <option value="1">No</option>
+					    <option value="2">Yes</option>
+					  </select>
+					</div>
+					</div>
+					<!-- Feature Ends here -->
+<button type="reset" class="btn btn-outline-success">Réinitialiser</button>
+<button type="submit" class="btn btn-primary">Prédire</button>	
+		</form>
+	</div>
+
+</body>
+</html>
