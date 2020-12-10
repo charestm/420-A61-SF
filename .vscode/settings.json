@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
+    "vs-kubernetes": {
+        "vs-kubernetes.kubectl-path.linux": "/home/vscode/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path.linux": "/home/vscode/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    }
+}
