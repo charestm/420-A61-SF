@@ -3,3 +3,4 @@ virtualenv
 Flask-SQLAlchemy
 pytest
 numpy
+pandas
