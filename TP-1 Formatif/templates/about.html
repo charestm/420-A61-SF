@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application de prédiction de l'hépatite</title>
+	 <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+  <a class="navbar-brand" href="/">Prédicteur de mortalité par hépatite</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dataset">Données</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/about">À propos</a>
+      </li>
+
+
+    </ul>
+ <!--    <form class="form-inline my-2 my-lg-0" method="POST" action="/predict">
+      <input class="form-control mr-sm-2" type="text" name="namequery" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Predict</button>
+    </form> -->
+  </div>
+</nav>
+<br/>
+<br/>
+<!-- blue #0686e4 -->
+<div class="jumbotron" style="background:#00eeff;color:rgb(0, 0, 0)">
+    <div class="container">
+      <h2 class="display-3">À propos</h2>
+      <p>
+          <!-- Repris de Wikipedia -->
+          <img alt="Image illustrative de l’article Cégep de Sainte-Foy" src="//upload.wikimedia.org/wikipedia/fr/thumb/8/80/Logo_C%C3%A9gep_de_Sainte-Foy.svg/langfr-200px-Logo_C%C3%A9gep_de_Sainte-Foy.svg.png" decoding="async" width="200" height="150" srcset="//upload.wikimedia.org/wikipedia/fr/thumb/8/80/Logo_C%C3%A9gep_de_Sainte-Foy.svg/langfr-300px-Logo_C%C3%A9gep_de_Sainte-Foy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/fr/thumb/8/80/Logo_C%C3%A9gep_de_Sainte-Foy.svg/langfr-400px-Logo_C%C3%A9gep_de_Sainte-Foy.svg.png 2x" data-file-width="1000" data-file-height="750">
+          <h3 class="display-4"><Cégep Sainte-Foy : Mon choix pour réussir /h3> 
+        </p>
+    </div>
+  </div>
+<br/>
+
+<div class="container" style="font-family:Impact; color:Red">
+    <h4>420-A61-SF - Préparation de la solution d’IA pour la mise en production</h4>
+    <p>Cette page a été dans le cadre du cours 420-A61-SF où l'objectif était de créer un prédicteur de mortalité par hépatite</p>
+    <p>
+      Pour plus d'information, nous vous invitons à consulter la page 
+      <ul>
+      <!-- Repris de Wikipedia --> 
+      <li>
+        <a href="https://fr.wikipedia.org/wiki/H%C3%A9patite"> 
+          <img class="mw-logo-icon" src="https://fr.wikipedia.org/static/images/mobile/copyright/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+          <img class="mw-logo-wordmark" alt="Wikipédia" src="https://fr.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" width="119" height="18">
+          Wikipedia Hépatite
+        </a> 
+      </li>
+      <li>
+        <a href="https://www.facebook.com/cegepsaintefoy/">
+          <!-- Repris de Wikipedia -->
+          <img alt="Facebook Logo (2019).svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/196px-Facebook_Logo_%282019%29.svg.png" decoding="async" width="196" height="38" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/294px-Facebook_Logo_%282019%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/392px-Facebook_Logo_%282019%29.svg.png 2x" data-file-width="1001" data-file-height="195">
+          Facebook du Cégep Sainte-Foy
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/search?q=c%C3%A9gep+sainte-foy">
+          <!-- Repris de Wikipedia -->
+          <img alt="Octicons-logo-github.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Octicons-logo-github.svg/180px-Octicons-logo-github.svg.png" width="180" height="64" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Octicons-logo-github.svg/270px-Octicons-logo-github.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Octicons-logo-github.svg/360px-Octicons-logo-github.svg.png 2x" data-file-width="2880" data-file-height="1024">
+          Recherche Github avec "Cégep Sainte-Foy" 
+        </a>
+      </li>
+    </ul>
+   </p>
+</div>
+<br/>
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+</body>
+</html>
